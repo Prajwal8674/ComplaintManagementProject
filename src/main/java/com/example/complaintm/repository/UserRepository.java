@@ -1,7 +1,7 @@
 package com.example.complaintm.repository;
 
-import com.example.complaintm.entity.User;
 import org.springframework.data.jpa.repository.JpaRepository;
+import com.example.complaintm.entity.User;
 
 public interface UserRepository extends JpaRepository<User, Long> {
     User findByEmail(String email);
